@@ -1,7 +1,6 @@
-# Huffman Compression
-The program included, a combination of `encode` and `decode`, is an implementation of the Huffman Compression Algorithm in C.\
-The following program uses data-structures such as a min-heap priority queue, stacks, and bit-vectors in order to implement the Huffman encoder and decoder.\
-The I/O functionality of this program uses the standard C `open() close() read() write()` functions.  The program also utilizes buffer sizes of 4KB per read and write call.
+# Assignment 5 - Huffman Compression
+    The following program is a C implementation of Huffman Coding, which is a form of static encoding. Huffman Coding uses something called entropy, which is a measure of the amount of information within something, in our case symbols, or characters, in a file. Static encoding is going to assign the least number of bits to the most frequently occurring symbol. Therefore we may use the ideas discussed in the sections below to implement a way to parse a file, get a histogram of its characters, and assign the amount of bits to each according to their frequency.\
+This is achieved through using the `encode` executable to encode a provided file, and `decode` to decode it. This program uses a myriad of data-structures such as a min-heap priority queue, stacks, and bit-vectors to achieve the implementation. The I/O functionality of this program uses the standard C `open() close() read() write()` functions. The program also utilizes buffer sizes of 4KB per read and write call.
 
 ## Building
 `make`          Equivelent to `make all`.\
